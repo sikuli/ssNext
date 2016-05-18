@@ -1,0 +1,18 @@
+.slide-track-content {
+  width: 60%;
+  float: right;
+}
+.slides-track-list {
+  ul {
+    overflow-x: auto;
+    list-style: none;
+    white-space: nowrap;
+    li {
+      display: inline;
+      padding-bottom: 5px;
+      img {
+        padding: 3px 10px;
+      }
+    }
+  }
+}

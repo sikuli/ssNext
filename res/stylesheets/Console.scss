@@ -1,0 +1,13 @@
+.console-content {
+  width: 40%;
+  float: left;
+}
+.logs-list {
+  overflow: auto;
+  ul {
+    list-style: none;
+    li {
+      padding-bottom: 5px;
+    }
+  }
+}

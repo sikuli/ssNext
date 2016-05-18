@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+    <script>
+    (function() {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'bundle.css';
+      if (process && process.env.NODE_ENV === 'development') {
+        link.href = 'http://localhost:8080/builds/bundle.css';
+      }
+      document.write(link.outerHTML);
+    }());
+    </script>
+    <title>ssNext</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+  (function() {
+    var bundleScriptEl = document.createElement('script');
+    var scriptSrc = '../builds/bundle.js';
+    if (process && process.env.NODE_ENV === 'development') {
+      scriptSrc = 'http://localhost:8080/builds/bundle.js';
+    }
+    bundleScriptEl.src = scriptSrc;
+    document.write(bundleScriptEl.outerHTML);
+  }());
+</script>
+</html>

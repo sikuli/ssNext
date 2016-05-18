@@ -1,0 +1,5 @@
+# Ignore test files
+node_modules/
+test/fixtures/
+coverage/
+indexes/

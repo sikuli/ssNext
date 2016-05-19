@@ -4,6 +4,7 @@ import Paper from 'material-ui/Paper';
 
 const paperStyle = {
   height: 160,
+  width: '80%',
   float: 'left'
 };
 const Console = () => {

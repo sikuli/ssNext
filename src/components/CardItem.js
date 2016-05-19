@@ -1,13 +1,10 @@
 import React, { PropTypes } from 'react';
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
 const CardItem = (props) => {
   return (
     <Card style={{ width: '23%', float: 'left', margin: '2%' }}>
-      <CardHeader
-        title={props.title}
-      />
       <CardMedia
         overlay={<CardTitle
           title={props.overlyTitle}
@@ -35,7 +32,6 @@ const CardItem = (props) => {
 };
 
 CardItem.propTypes = {
-  title: PropTypes.string.isRequired,
   time: PropTypes.object.isRequired,
   thumbnail: PropTypes.object.isRequired,
   overlyTitle: PropTypes.string.isRequired,

@@ -9,8 +9,6 @@ import Console from './Console';
 const data = [
   {
     id: 1,
-    title: 'Testing website 1 title',
-    subtitle: 'Testing website 1 subtitle',
     thumbnail: { src: 'http://placehold.it/210x158', alt: 'Slide 1' },
     overlyTitle: 'Overly Title#1',
     overlySubtitle: 'Overly Subtitle#1',
@@ -21,8 +19,6 @@ const data = [
   },
   {
     id: 2,
-    title: 'Testing website 2 title',
-    subtitle: 'Testing website 2 subtitle',
     thumbnail: { src: 'http://placehold.it/210x158', alt: 'Slide 2' },
     overlyTitle: 'Overly Title#2',
     overlySubtitle: 'Overly Subtitle#2',
@@ -33,8 +29,6 @@ const data = [
   },
   {
     id: 3,
-    title: 'Testing website 3 title',
-    subtitle: 'Testing website 3 subtitle',
     thumbnail: { src: 'http://placehold.it/210x158', alt: 'Slide 3' },
     overlyTitle: 'Overly Title#3',
     overlySubtitle: 'Overly Subtitle#3',
@@ -45,6 +39,10 @@ const data = [
   }
 ];
 
+const slideThumbnails = Array.apply(null, Array(10)).map(() => {
+  return 'http://placehold.it/140x140';
+});
+
 const AppContainer = () => {
   return (
     <div className="app-container">
@@ -54,7 +52,7 @@ const AppContainer = () => {
         <CardsList cards={data} />
         <div className="pane-content">
           <Console />
-          <SlidesTrack />
+          <SlidesTrack thumbnails={slideThumbnails} />
         </div>
       </div>
     </div>

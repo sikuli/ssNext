@@ -3,10 +3,6 @@ node_js:
   - "5"
 install:
   - npm install
-  - npm install -g gulp
-before_script:
-  # Kick off the default gulp task
-  - gulp
 script:
   - npm test
 after_success:

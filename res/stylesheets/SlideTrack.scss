@@ -1,18 +1,20 @@
 .slide-track-content {
+  float: left;
   width: 60%;
-  float: right;
 }
+
 .slides-track-list {
   ul {
-    overflow-x: auto;
     list-style: none;
+    overflow-x: auto;
     white-space: nowrap;
-    li {
-      display: inline;
-      padding-bottom: 5px;
-      img {
-        padding: 3px 10px;
-      }
+  }
+
+  li {
+    display: inline;
+
+    img {
+      margin: 10px 30px;
     }
   }
 }

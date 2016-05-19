@@ -1,11 +1,14 @@
 .console-content {
-  width: 40%;
   float: left;
+  width: 30%;
 }
+
 .logs-list {
   overflow: auto;
+
   ul {
     list-style: none;
+
     li {
       padding-bottom: 5px;
     }
